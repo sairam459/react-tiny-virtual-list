@@ -63,14 +63,14 @@
     "email": "me@ced.io"
   },
   "user": "clauderic",
-  "homepage": "https://github.com/clauderic/react-tiny-virtual-list",
+  "homepage": "https://github.com/sairam459/react-tiny-virtual-list",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sairam459/react-tiny-virtual-list.git"
   },
   "bugs": {
-    "url": "https://github.com/clauderic/react-tiny-virtual-list/issues"
+    "url": "https://github.com/sairam459/react-tiny-virtual-list/issues"
   },
   "keywords": [
     "react",
