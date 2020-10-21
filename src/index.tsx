@@ -119,6 +119,7 @@ export default class VirtualList extends React.PureComponent<Props, State> {
     renderItem: PropTypes.func.isRequired,
     scrollOffset: PropTypes.number,
     scrollToIndex: PropTypes.number,
+    dragRef:PropTypes.any,
     scrollToAlignment: PropTypes.oneOf([
       ALIGNMENT.AUTO,
       ALIGNMENT.START,
@@ -289,6 +290,7 @@ export default class VirtualList extends React.PureComponent<Props, State> {
       stickyIndices,
       style,
       width,
+      dragRef,
       ...props
     } = this.props;
     const {offset} = this.state;
@@ -343,7 +345,7 @@ export default class VirtualList extends React.PureComponent<Props, State> {
 
     return (
       <div ref={this.getRef} {...props} style={wrapperStyle}>
-        <div style={innerStyle}>{items}</div>
+        <div style={innerStyle} ref={dragRef}>{items}</div>
       </div>
     );
   }
