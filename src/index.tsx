@@ -57,6 +57,7 @@ export interface Props {
   stickyIndices?: number[];
   style?: React.CSSProperties;
   width?: number | string;
+  dragRef:any;
   onItemsRendered?({startIndex, stopIndex}: RenderedRows): void;
   onScroll?(offset: number, event: UIEvent): void;
   renderItem(itemInfo: ItemInfo): React.ReactNode;
